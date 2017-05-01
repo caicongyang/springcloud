@@ -4,6 +4,12 @@
   <artifactId>springCloud</artifactId>
   <version>0.0.1-SNAPSHOT</version>  
   <packaging>pom</packaging>
+  
+  	<parent>
+		<groupId>org.springframework.cloud</groupId>
+		<artifactId>spring-cloud-starter-parent</artifactId>
+		<version>Angel.SR6</version>
+	</parent>
   <modules>
   	<module>springCloudApp</module>
   	<module>springCloudConfigServer</module>
