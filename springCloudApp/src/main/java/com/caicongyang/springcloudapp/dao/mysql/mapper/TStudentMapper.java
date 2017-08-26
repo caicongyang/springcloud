@@ -3,6 +3,7 @@ package com.caicongyang.springcloudapp.dao.mysql.mapper;
 import java.util.List;
 
 import org.apache.ibatis.annotations.Param;
+import org.springframework.beans.factory.annotation.Qualifier;
 
 import com.caicongyang.springcloudapp.dao.mysql.entities.TStudent;
 import com.caicongyang.springcloudapp.dao.mysql.entities.TStudentExample;
@@ -10,6 +11,7 @@ import com.caicongyang.springcloudapp.dao.mysql.entities.TStudentExample;
 /**
  * student
  */
+@Qualifier("mysqlSessionFactory")
 public interface TStudentMapper {
     /**
      * 获取符合条件的记录数

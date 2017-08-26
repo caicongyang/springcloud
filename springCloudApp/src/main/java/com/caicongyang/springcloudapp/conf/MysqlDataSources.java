@@ -8,12 +8,12 @@ import javax.sql.DataSource;
 
 import org.apache.ibatis.session.SqlSessionFactory;
 import org.mybatis.spring.SqlSessionFactoryBean;
-import org.mybatis.spring.SqlSessionTemplate;
 import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.Primary;
 import org.springframework.core.io.support.PathMatchingResourcePatternResolver;
 import org.springframework.jdbc.datasource.DataSourceTransactionManager;
 import org.springframework.transaction.support.TransactionTemplate;
@@ -27,7 +27,7 @@ import com.zaxxer.hikari.HikariDataSource;
  * @version $Id: DataSources.java, v 0.1 2015年9月9日 下午8:38:33 caicongyang1 Exp $
  */
 @Configuration
-@MapperScan(basePackages = "com.caicongyang.springcloudapp.dao.mysql", sqlSessionFactoryRef = "mysqlSqlSessionTemplate")
+@MapperScan(basePackages = "com.caicongyang.springcloudapp.dao.mysql", sqlSessionFactoryRef = "mysqlSessionFactory")
 public class MysqlDataSources {
 
     @Autowired
@@ -38,6 +38,7 @@ public class MysqlDataSources {
      *
      * @return
      */
+    @Primary
     @Bean(name = "mysqlDataSource")
     public DataSource getMysqlDataSource() {
         final HikariDataSource ds = new HikariDataSource();
@@ -88,8 +89,4 @@ public class MysqlDataSources {
         return sqlSessionFactoryBean.getObject();
     }
 
-    @Bean(name = "mysqlSessionTemplate")
-    public SqlSessionTemplate getSqlSessionTemplate(@Qualifier("mysqlSessionFactory") SqlSessionFactory factory) {
-        return new SqlSessionTemplate(factory);
-    }
 }

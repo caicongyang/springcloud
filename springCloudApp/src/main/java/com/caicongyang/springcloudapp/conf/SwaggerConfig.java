@@ -25,6 +25,6 @@ public class SwaggerConfig {
     public Docket docketFactory() {
         return new Docket(DocumentationType.SWAGGER_2)
             .apiInfo(new ApiInfo("接口文档", "SpingCloud web接口列表", "1.0", "", "", "", ""))
-            .enable(environmentSpecificBooleanFlag);
+            .enable(Boolean.valueOf(environmentSpecificBooleanFlag));
     }
 }

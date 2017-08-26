@@ -26,7 +26,7 @@ import com.zaxxer.hikari.HikariDataSource;
  * @version id: PostgreSQLDataSources, v 0.1 17/8/10 下午7:21 caicongyang1 Exp $$
  */
 @Configuration
-@MapperScan(basePackages = "com.caicongyang.springcloudapp.pg.dao", sqlSessionFactoryRef = "pgSqlSessionFactory")
+@MapperScan(basePackages = "com.caicongyang.springcloudapp.dao.pg", sqlSessionFactoryRef = "pgSqlSessionFactory")
 public class PostgreSqlDataSources {
 
     @Autowired

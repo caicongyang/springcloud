@@ -10,6 +10,8 @@ import org.springframework.test.context.web.WebAppConfiguration;
 
 import com.caicongyang.springcloudapp.main.Application;
 
+//
+
 /**
  * Created by caicongyang1 on 2017/4/5.
  */
