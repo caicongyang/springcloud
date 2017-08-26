@@ -1,4 +1,4 @@
-package com.caicongyang.springCloudApp.controllers;
+package com.caicongyang.springcloudapp.controllers;
 
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;

@@ -1,4 +1,4 @@
-package com.caicongyang.springCloudApp.main;
+package com.caicongyang.springcloudapp.main;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
@@ -13,7 +13,7 @@ import org.springframework.context.annotation.Configuration;
  */
 @Configuration//配置控制  
 @EnableAutoConfiguration//启用自动配置  
-@ComponentScan(value={"com.caicongyang.springCloudApp"})//组件扫描  
+@ComponentScan(value={"com.caicongyang.springcloudapp"})//组件扫描
 @EnableDiscoveryClient
 public class Application {
 	public static void main(String[] args) {   

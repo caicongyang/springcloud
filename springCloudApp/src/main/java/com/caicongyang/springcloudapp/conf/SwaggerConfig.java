@@ -1,4 +1,4 @@
-package com.caicongyang.springCloudApp.conf;
+package com.caicongyang.springcloudapp.conf;
 
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
@@ -18,12 +18,13 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
 @EnableSwagger2
 public class SwaggerConfig {
 
-	@Value("${swagger.ui.enable}") //该配置项在配置中心管理
+    @Value("${swagger.ui.enable}") //该配置项在配置中心管理
     private boolean environmentSpecificBooleanFlag;
-	
+
     @Bean
     public Docket docketFactory() {
-        return new Docket(DocumentationType.SWAGGER_2).apiInfo(
-           new ApiInfo("接口文档", "SpingCloud web接口列表", "1.0", "", "", "", "")).enable(environmentSpecificBooleanFlag);
+        return new Docket(DocumentationType.SWAGGER_2)
+            .apiInfo(new ApiInfo("接口文档", "SpingCloud web接口列表", "1.0", "", "", "", ""))
+            .enable(environmentSpecificBooleanFlag);
     }
 }
