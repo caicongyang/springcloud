@@ -12,6 +12,9 @@ import org.springframework.context.annotation.Configuration;
  * Spring could web程序主入口
  * @author Administrator
  *
+ * swagger地址
+ * http://localhost:8080/swagger-ui/index.html
+ *
  */
 
 @EnableDiscoveryClient
