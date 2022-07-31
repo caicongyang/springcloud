@@ -17,9 +17,9 @@
 
 
     <modules>
-        <module>springCloudApp</module>
-        <module>springCloudConfigServer</module>
-        <module>springCloudEurekaServer</module>
+        <module>app</module>
+        <module>configServer</module>
+        <module>eurekaServer</module>
         <module>order</module>
         <module>order-api</module>
         <module>common</module>
