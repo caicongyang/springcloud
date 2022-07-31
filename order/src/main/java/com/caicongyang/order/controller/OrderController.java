@@ -1,7 +1,7 @@
 package com.caicongyang.order.controller;
 
-import com.caicongyang.order.common.R;
 import com.caicongyang.order.dto.Order;
+import common.R;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
