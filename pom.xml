@@ -11,7 +11,7 @@
 
 
     <groupId>com.caicongyang</groupId>
-    <artifactId>springCloud</artifactId>
+    <artifactId>cloud</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <packaging>pom</packaging>
 
