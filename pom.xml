@@ -23,6 +23,7 @@
         <module>order</module>
         <module>order-api</module>
         <module>common</module>
+        <module>geteway</module>
     </modules>
 
     <properties>

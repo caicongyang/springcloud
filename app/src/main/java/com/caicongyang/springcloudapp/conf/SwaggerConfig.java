@@ -21,7 +21,7 @@ import springfox.documentation.spring.web.plugins.Docket;
 @EnableOpenApi
 public class SwaggerConfig {
 
-    @Value("${swagger.ui.enable}") //该配置项在配置中心管理
+    @Value("${swagger.ui.enable:true}") //该配置项在配置中心管理
     private boolean environmentSpecificBooleanFlag;
 
 
