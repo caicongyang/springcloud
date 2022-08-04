@@ -6,7 +6,7 @@
  * 版权所有，侵权必究！
  */
 
-package common;
+package com.caicongyang.cloud.common;
 
 import org.apache.http.HttpStatus;
 

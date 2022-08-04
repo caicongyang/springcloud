@@ -1,7 +1,7 @@
 package com.caicongyang.cloud.order.controller;
 
 import com.caicongyang.cloud.order.dto.Order;
-import common.R;
+import com.caicongyang.cloud.common.R;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;

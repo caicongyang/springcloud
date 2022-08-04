@@ -2,7 +2,7 @@ package com.caicongyang.cloud.app.controllers;
 
 
 import com.caicongyang.cloud.order.api.OrderFeignService;
-import common.R;
+import com.caicongyang.cloud.common.R;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
