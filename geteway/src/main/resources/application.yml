@@ -9,6 +9,9 @@ spring:
         locator:
           enabled: true
           lower-case-service-id: true
+      loadbalancer:
+            ribbon:
+                  enabled: false
 
 
 # 配置Gateway日志等级，输出转发细节信息
