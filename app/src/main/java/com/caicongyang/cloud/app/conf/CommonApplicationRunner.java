@@ -23,7 +23,7 @@ public class CommonApplicationRunner implements ApplicationRunner {
     @Override
     public void run(ApplicationArguments args) throws Exception {
         Map<String, String> branch = new HashMap<>();
-        branch.put("branch", gitProperties.get("branch"));
+        branch.put("branch", gitProperties.getBranch());
         manager.registerAppMetadata(branch);
     }
 }
